@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+{% for vfile in vlist  %}
+<li><a href="/player/{{vfile}}">{{vfile}}</a></li>
+{% endfor %}
+</ul>
+<a href="/uploader">Upload video...</a>
+</body>
+</html>
