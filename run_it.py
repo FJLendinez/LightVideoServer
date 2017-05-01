@@ -14,5 +14,5 @@ def main():
     return redirect("/list")
 
 if __name__ == "__main__":
-    app.config.from_pyfile("./instance/config.py")
+    app.config.from_pyfile("./instance/local.py")
     app.run(host='0.0.0.0',port=80)

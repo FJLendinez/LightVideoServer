@@ -19,12 +19,10 @@ def uploader():
         if 'vfile' not in request.files:
             flash('No file part')
             return redirect(request.url)
-        print(request.files)
         vfile = request.files['vfile']
         if vfile.filename == '':
             print('No selected file')
             return redirect(request.url)
         if vfile and allowed_file(vfile.filename):
             vfile.save(os.path.join(os.getcwd(), 'video', vfile.filename))
-            flash("tu video se está procesando")
             return redirect("/list")
