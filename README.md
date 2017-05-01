@@ -11,16 +11,27 @@
 2.- Create a empty folder called 'video'
 
 |->Instance
+
             |->deploy.py
+
             ...
+
 |->video
+
 |->templates
+
             |->list.html
+
             ...
+
 |->views
+
         |->list.py
+
         ...
+
 |->run_it.py
+
 ...
 
 3.- Execute it
