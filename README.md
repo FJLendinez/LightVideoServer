@@ -8,31 +8,7 @@
 
 ``` pip install -r requeriments.txt ```
 
-2.- Create a empty folder called 'video'
-
-|->Instance
-
-            |->deploy.py
-
-            ...
-
-|->video
-
-|->templates
-
-            |->list.html
-
-            ...
-
-|->views
-
-        |->list.py
-
-        ...
-
-|->run_it.py
-
-...
+2.- Create a empty folder called 'video' on the root's project
 
 3.- Execute it
 
