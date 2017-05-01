@@ -23,7 +23,7 @@
 |->run_it.py
 ...
 
-2.- Execute it
+3.- Execute it
 
 ``` python run_it.py ```
 
