@@ -1,3 +1,4 @@
+import os
 from flask import Flask, redirect
 from views.list import app_list
 from views.player import app_player
@@ -14,5 +15,10 @@ def main():
     return redirect("/list")
 
 if __name__ == "__main__":
+    if os.path.exists(os.path.join(os.getcwd(),'video')):
+        print("Video folder already exists")
+    else:
+        print("Creating video folder on "+os.path.join(os.getcwd(),'video'))
+        os.mkdir(os.path.join(os.getcwd(),'video'))
     app.config.from_pyfile("./instance/local.py")
     app.run(host='0.0.0.0',port=80)

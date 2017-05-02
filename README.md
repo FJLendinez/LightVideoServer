@@ -8,9 +8,7 @@
 
 ``` pip install -r requeriments.txt ```
 
-2.- Create a empty folder called 'video' on the root's project
-
-3.- Execute it
+2.- Execute it
 
 ``` python run_it.py ```
 

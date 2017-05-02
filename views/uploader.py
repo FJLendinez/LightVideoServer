@@ -3,7 +3,7 @@ from flask import Blueprint, render_template, request, flash, redirect
 
 app_uploader = Blueprint('uploader', __name__)
 
-ALLOWED_EXTENSIONS = set(['mp4'])
+ALLOWED_EXTENSIONS = set(['mp4','mov'])
 
 
 def allowed_file(filename):
@@ -23,6 +23,9 @@ def uploader():
         if vfile.filename == '':
             print('No selected file')
             return redirect(request.url)
+        print(vfile.filename)
         if vfile and allowed_file(vfile.filename):
             vfile.save(os.path.join(os.getcwd(), 'video', vfile.filename))
             return redirect("/list")
+
+        return redirect("/list")
