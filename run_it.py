@@ -21,4 +21,4 @@ if __name__ == "__main__":
         print("Creating video folder on "+os.path.join(os.getcwd(),'video'))
         os.mkdir(os.path.join(os.getcwd(),'video'))
     app.config.from_pyfile("./instance/local.py")
-    app.run(host='0.0.0.0',port=80)
+    app.run(host='0.0.0.0',port=80, threaded=True)
